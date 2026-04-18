@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Lift</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-6 lg:px-10 py-4 bg-black/90 backdrop-blur-sm text-white fixed top-0 w-full z-20">
+
+<h1 class="text-3xl font-extrabold tracking-wide">
+  <span class="text-orange-400">Quick</span>
+  <span class="text-white">Lift</span>
+</h1>
+
+<ul class="hidden md:flex gap-6">
+  <li class="cursor-pointer hover:text-orange-400">Home</li>
+  <li class="cursor-pointer hover:text-orange-400">Services</li>
+  <li class="cursor-pointer hover:text-orange-400">About</li>
+  <li class="cursor-pointer hover:text-orange-400">Contact</li>
+</ul>
+
+<div class="hidden md:flex gap-4">
+  <button class="border border-white text-white px-4 py-1 rounded hover:orange-500 hover:text-orange-500 transition duration-300">
+    Login
+  </button>
+
+  <button class="border border-white text-white px-4 py-1 rounded hover:orange-500 hover:text-orange-500 transition duration-300">
+    Sign Up
+  </button>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section class="relative mt-16 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 py-16">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88YHXwTgHZ_wDp0XruURo7LRMFc20qK8UbQ&s"
+class="absolute inset-0 w-full h-full object-cover -z-10">
+
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+
+<div class="relative z-10 max-w-xl text-center lg:text-left">
+
+<h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-white">
+  Book Your Ride <br>
+  <span class="text-orange-400">In Seconds</span>
+</h2>
+
+<p class="text-lg text-gray-300 font-semibold mb-6">
+  Fast, Safe & Affordable Ride In Any Time
+</p>
+
+<button class="text-white bg-orange-500 px-6 py-3 font-bold rounded-full hover:bg-orange-600 transition">
+  Get Started
+</button>
+
+<!-- BOOKING BOX -->
+<div class="bg-white p-6 rounded-xl shadow-lg mt-6">
+
+<input class="w-full p-3 mb-4 text-black rounded bg-gray-100 outline-none placeholder-black" placeholder="Pickup Location">
+<input class="w-full p-3 mb-4 text-black rounded bg-gray-100 outline-none placeholder-black" placeholder="Drop Location">
+
+<button class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm hover:bg-orange-600 transition">
+  Book Ride
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="py-10 text-center bg-gray-300 text-white">
+
+<h2 class="text-4xl text-orange-600 font-bold capitalize">Our Services</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-6 lg:px-10">
+
+<!-- CARD -->
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <circle cx="5.5" cy="17.5" r="2.5" stroke-width="2" />
+            <circle cx="18.5" cy="17.5" r="2.5" stroke-width="2"/>
+            <path stroke width="2" d="M5.5 17.5L10 10h3l3.5 7.5M10 10L7 6h3"/> 
+</svg>
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Bike</h3>
+<p class="text-gray-300">Quick and affordable rides for short distances</p>
+</div>
+
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <path stroke-width="2" d="M3 13l2-5h13l2 5"/>
+            <circle cx="7" cy="18" r="2" stroke-width="2"/>
+            <circle cx="17" cy="18" r="2" stroke-width="2"/>
+</svg>
+
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Car</h3>
+<p class="text-gray-300">Comfortable rides for daily travel</p>
+</div>
+
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <rect x="3" y="10" width="18" height="6" stroke-width="2"/>
+            <circle cx="7" cy="18" r="2" stroke-width="2"/>
+            <circle cx="17" cy="18" r="2" stroke-width="2"/>
+</svg>
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Auto</h3>
+<p class="text-gray-300">Budget-friendly rides for quick trips</p>
+</div>
+
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <path stroke-width="2" d="M2 16l20-5-20-5v4l15 1-15 1v4z"/>
+</svg>
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Airport</h3>
+<p class="text-gray-300">On-time airport pickup and drop</p>
+</div>
+
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <path stroke-width="2" d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z"/>
+</svg>
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Luxury</h3>
+<p class="text-gray-300">Premium rides for special occasions</p>
+</div>
+
+<div class="p-6 border border-gray-700 rounded-lg bg-black text-center hover:border-orange-500 hover:scale-105 transition duration-300">
+<svg class="w-12 h-12 mx-auto text-orange-400" fill="none" stroke="currentcolor" viewbox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" stroke-width="2"/>
+            <path stroke-width="2" d="M12 6v6l4 2"/>
+</svg>
+<h3 class="mt-4 font-semibold text-lg text-orange-400">Rental</h3>
+<p class="text-gray-300">Rent vehicles for hours or days</p>
+</div>
+
+</div>
+</section>
+
+<section class="py-12 bg-gray-900 text-center text-white">
+  <h2 class="text-2xl font-bold">Ready to Ride?</h2>
+  <p class="text-gray-400 mt-2">Book your ride now in seconds</p>
+  <button class="mt-4 bg-orange-500 px-6 py-2 rounded hover:bg-orange-600">
+    Get Started
+  </button>
+</section>
+
+<section class="py-16 bg-white text-center">
+  <h2 class="text-3xl font-bold text-white">Why Choose Quick Lift?</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 px-6">
+
+    <div class="card-wrapper">
+      <div class="service-card p-6 border border-gray-700 rounded-lg bg-white text-center">
+        <div class="text-4xl mb-3">⚡</div>
+        <h3 class="font-semibold text-lg text-orange-500">Fast Pickup</h3>
+        <p class="text-gray-800 mt-2">Get a ride within minutes</p>
+      </div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="service-card p-6 border border-gray-700 rounded-lg bg-white text-center">
+        <div class="text-4xl mb-3">💰</div>
+        <h3 class="font-semibold text-lg text-orange-500">Affordable</h3>
+        <p class="text-gray-800 mt-2">Best price guaranteed</p>
+      </div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="service-card p-6 border border-gray-700 rounded-lg bg-white text-center">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="font-semibold text-lg text-orange-500">Safe Ride</h3>
+        <p class="text-gray-800 mt-2">100% secure rides</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-12">
+
+<div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+<div>
+<h2 class="text-2xl font-bold text-orange-400">Quick Lift</h2>
+<p class="mt-4 text-gray-400">
+Fast, reliable and affordable rides at your fingertips.
+</p>
+</div>
+
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-orange-400">Home</a></li>
+<li><a href="#" class="hover:text-orange-400">Services</a></li>
+<li><a href="#" class="hover:text-orange-400">About</a></li>
+<li><a href="#" class="hover:text-orange-400">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h3 class="text-lg font-semibold mb-4">Services</h3>
+<ul class="space-y-2 text-gray-400">
+<li>Bike</li>
+<li>Car</li>
+<li>Auto</li>
+<li>Airport</li>
+<li>Luxury</li>
+<li>Rental</li>
+</ul>
+</div>
+
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact</h3>
+<p class="text-gray-400">📍 Thiruvarur, India</p>
+<p class="text-gray-400 mt-2">📞 +91 99999 99999</p>
+<p class="text-gray-400 mt-2">✉️ support@quicklift.com</p>
+</div>
+
+</div>
+
+<div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6">
+© 2026 QuickLift. All rights reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
