@@ -34,20 +34,21 @@ tailwind.config = {
 </h1>
 
 <ul class="hidden md:flex gap-6">
-  <li class="cursor-pointer  hover:text-yellow-400">Home</li>
-  <li class="cursor-pointer  hover:text-yellow-400">Services</li>
-  <li class="cursor-pointer  hover:text-yellow-400">About</li>
-  <li class="cursor-pointer hover:text-yellow-400">Contact</li>
+  <li><a href="index.html" class="cursor-pointer  text-yellow-400">Home</a></li>
+  <li><a href="#services" class="cursor-pointer  hover:text-yellow-400">Services</a></li>
+  <li><a href="About.html" class="cursor-pointer  hover:text-yellow-400">About</a></li>
+  <li><a href="contact.html" class="cursor-pointer  hover:text-yellow-400">Contact</a></li>
+  <li><a href="driver.html" class="hover:text-yellow-400">Drive With Us</a></li>
 </ul>
 
 <div class="hidden md:flex gap-4">
-  <button class="border border-white text-white px-4 py-1 rounded hover:#eab308 hover:text-yellow-500 transition duration-300">
+ <a href="login.html"> <button  class="border border-white text-white px-4 py-1 rounded hover:#eab308 hover:text-yellow-500 transition duration-300 ">
     Login
   </button>
-
-  <button class="border border-white text-white px-4 py-1 rounded hover:#eab308 hover:text-yellow-500 transition duration-300">
+</a>
+<a href="signup.html"><button class="border border-white text-white px-4 py-1 rounded hover:#eab308 hover:text-yellow-500 transition duration-300">
     Sign Up
-  </button>
+  </button></a>
 </div>
 
 </nav>
@@ -95,7 +96,7 @@ class="absolute inset-0 w-full h-full object-cover -z-10">
 </section>
 
 <!-- SERVICES -->
-<section class="py-10 text-center bg-gray-100 text-white">
+<section id="services" class="py-10 text-center bg-gray-100 text-white">
 
 <h2 class="text-4xl text-yellow-400 font-bold capitalize">Our Services</h2>
 
@@ -276,9 +277,9 @@ function selectRide(type, element) {
     // price logic
     let price = 0
 
-    if(type === "Bike") price = 50
-    if(type === "Auto") price = 80
-    if(type === "Car") price = 120
+    if(type === "Bike") price = 0
+    if(type === "Auto") price = 0
+    if(type === "Car") price = 0
 
     document.getElementById("price").textContent = "Price: ₹" + price
 }
